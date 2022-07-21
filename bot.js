@@ -1,11 +1,15 @@
 const Telegraf = require('telegraf');
 
-const bot = new Telegraf('botTokenGoesHere');
+const bot = new Telegraf('BotTokenGoesHere');
 
 //code goes here
 
 bot.start((ctx)=> {
-    ctx.reply('hello veltaleh');
+    ctx.reply(`hello rabbi ${ctx.from.first_name}, welcome to my vinkel veltaleh`);
+    console.log(ctx.from);
+    console.log(ctx.chat);
+    console.log(ctx.message);
+    console.log (ctx.updateSubTypes);
 });
 
 bot.help((ctx)=>{
