@@ -11,5 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "telegraf": "3.32"
-  }
+  },
+  "type": "module"
 }
